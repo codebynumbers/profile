@@ -27,7 +27,7 @@ source .profile
 
 # If you're on Ubuntu, instead of linking .profile.d/init, you can 
 # overwrite your .bashrc to simply:
-# source .profile.d/init
+# source ~/.profile.d/init
 </pre>
 
 From here you can now put any .profile.d/<notextile>*</notextile>.conf file, or put it in a folder for your `uname` (Darwin, Linux, SunOS are already there).  The load order is.
