@@ -2,9 +2,9 @@ h1. My Bash Profile
 
 This is the profile that I'm now using across a number of machines that I administer.  Most of the tricks I use are fairly general and could be reused by anyone.
 
-h2. What's it look like?
+h2. Personalization
 
-!http://cloud.github.com/downloads/matschaffer/profile/diagram.png(Feature Diagram)!
+This has been tweaked a bit from https://github.com/codeslinger/profile, which was cloned from https://github.com/kyleburton/profile.  Using one of those will probably be better maintained.
 
 h2. Usage
 
@@ -24,6 +24,10 @@ ln -s .profile.d/init .profile
 # Make sure you don't have any .bash_profile or .bashrc hanging out which might override .profile
 # and reload your profile
 source .profile
+
+# If you're on Ubuntu, instead of linking .profile.d/init, you can 
+# overwrite your .bashrc to simply:
+# source .profile.d/init
 </pre>
 
 From here you can now put any .profile.d/<notextile>*</notextile>.conf file, or put it in a folder for your `uname` (Darwin, Linux, SunOS are already there).  The load order is.
